@@ -1,0 +1,124 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/*
+====================
+Home Page
+====================
+*/
+
+#intro-grid {
+    margin-top: 2em;
+    height: 550px;
+    display: grid;
+    grid-template-rows: 120px 20% 20px auto;
+}
+
+#intro-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro-line {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.test {
+    border-right: 1px solid #ccc;
+}
+
+#main-lines {
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 16.667%);
+}
+
+#main-line-one,
+#main-line-three,
+#main-line-five {
+    border-right: 1px solid #ccc;
+}
+
+#main-line-two, 
+#main-line-three, 
+#main-line-four, 
+#main-line-five {
+    border-top: 1px solid #ccc;
+}
+
+#main-grid {
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+}
+
+#main-grid > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-picture-div {
+    position: relative;
+}
+
+.main-picture {
+    position: absolute;
+    top: 0px;
+    width: 230px;
+    height: 230px;
+    height: 70%;
+}
+
+.main-picture img {
+    display: block;
+    max-width: 230px;
+    max-height: 210px;
+    height: 100%;
+    width: auto;
+}
+
+/*
+====================
+Anchors
+====================
+*/
+
+a {
+    text-decoration: none;
+}
+
+/*
+====================
+Fonts
+====================
+*/
+
+h3 {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 78px;
+    letter-spacing: 4.6px;
+}
+
+.main-grid-category {
+    font-style: italic;
+    padding-top: 9px;
+    position: absolute;
+    bottom: 60px;
+}
